@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { PhotosComponent } from "./photos/photos.component";
 
 @Component({
+  standalone: true,
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [PhotosComponent],
 })
 export class AppComponent {
-  title = 'photography';
+  title = 'Photo app.ts';
 }
